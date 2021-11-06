@@ -39,7 +39,7 @@ public class HelloxClassLoader extends ClassLoader {
             // java 9 有一定的加强
             try (FileInputStream fileInputStream = new FileInputStream(url.getFile());
                  BufferedInputStream inputStream = new BufferedInputStream(fileInputStream)) {
-                byte[] bytes = new byte[126];
+                byte[] bytes = new byte[128];
                 int read = 0;
                 // 所有的字节
                 byte[] all = new byte[0];
